@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C3F482095C4203ABC9F7626 /* libPods-BaseProgect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B9EA1B3980A321912EDF3 /* libPods-BaseProgect.a */; };
+		A52BF714221145A4001301B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF713221145A4001301B5 /* AppDelegate.m */; };
+		A52BF722221145A6001301B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52BF721221145A6001301B5 /* Assets.xcassets */; };
+		A52BF725221145A6001301B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52BF723221145A6001301B5 /* LaunchScreen.storyboard */; };
+		A52BF728221145A6001301B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF727221145A6001301B5 /* main.m */; };
+		A52BF73022114D45001301B5 /* WJDMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52BF72F22114D45001301B5 /* WJDMain.storyboard */; };
+		A52BF73622114E92001301B5 /* WJDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF73522114E92001301B5 /* WJDTabBarController.m */; };
+		A52BF73922114FF1001301B5 /* WJDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF73822114FF1001301B5 /* WJDNavigationViewController.m */; };
+		A52BF73C22115007001301B5 /* WJDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF73B22115007001301B5 /* WJDBaseViewController.m */; };
+		A52BF74A22115500001301B5 /* AppDelegate+Push.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF74922115500001301B5 /* AppDelegate+Push.m */; };
+		A52BF74D22115529001301B5 /* AppDelegate+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF74C22115529001301B5 /* AppDelegate+Register.m */; };
+		A52BF878221435DE001301B5 /* PPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF873221435DD001301B5 /* PPNetworkCache.m */; };
+		A52BF879221435DE001301B5 /* PPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF876221435DD001301B5 /* PPNetworkHelper.m */; };
+		A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88022150BDF001301B5 /* WJDKDID.m */; };
+		A52BF88522150C0E001301B5 /* JDDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88422150C0E001301B5 /* JDDeviceUtils.m */; };
+		A52BF88A22150EB2001301B5 /* JDHubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88822150EB2001301B5 /* JDHubMessageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		560A4ED74295962B7ACD7275 /* Pods-BaseProgect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProgect.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProgect/Pods-BaseProgect.release.xcconfig"; sourceTree = "<group>"; };
+		61CB33B54B630A5D03717880 /* Pods-BaseProgect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProgect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProgect/Pods-BaseProgect.debug.xcconfig"; sourceTree = "<group>"; };
+		878B9EA1B3980A321912EDF3 /* libPods-BaseProgect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProgect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52BF70F221145A4001301B5 /* BaseProgect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProgect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52BF712221145A4001301B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A52BF713221145A4001301B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A52BF721221145A6001301B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A52BF724221145A6001301B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A52BF726221145A6001301B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52BF727221145A6001301B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A52BF72F22114D45001301B5 /* WJDMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WJDMain.storyboard; sourceTree = "<group>"; };
+		A52BF73422114E92001301B5 /* WJDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDTabBarController.h; sourceTree = "<group>"; };
+		A52BF73522114E92001301B5 /* WJDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDTabBarController.m; sourceTree = "<group>"; };
+		A52BF73722114FF1001301B5 /* WJDNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDNavigationViewController.h; sourceTree = "<group>"; };
+		A52BF73822114FF1001301B5 /* WJDNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDNavigationViewController.m; sourceTree = "<group>"; };
+		A52BF73A22115007001301B5 /* WJDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDBaseViewController.h; sourceTree = "<group>"; };
+		A52BF73B22115007001301B5 /* WJDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDBaseViewController.m; sourceTree = "<group>"; };
+		A52BF73E221150B8001301B5 /* WJDColorsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDColorsHeader.h; sourceTree = "<group>"; };
+		A52BF73F221150E0001301B5 /* WJDFontSizeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDFontSizeHeader.h; sourceTree = "<group>"; };
+		A52BF74022115194001301B5 /* WJDDeviceSizeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDDeviceSizeHeader.h; sourceTree = "<group>"; };
+		A52BF741221151E5001301B5 /* WJDShortcutHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDShortcutHeader.h; sourceTree = "<group>"; };
+		A52BF74222115218001301B5 /* WJDConstStrHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDConstStrHeader.h; sourceTree = "<group>"; };
+		A52BF74822115500001301B5 /* AppDelegate+Push.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Push.h"; sourceTree = "<group>"; };
+		A52BF74922115500001301B5 /* AppDelegate+Push.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Push.m"; sourceTree = "<group>"; };
+		A52BF74B22115529001301B5 /* AppDelegate+Register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Register.h"; sourceTree = "<group>"; };
+		A52BF74C22115529001301B5 /* AppDelegate+Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Register.m"; sourceTree = "<group>"; };
+		A52BF74F221168C8001301B5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A52BF755221169EF001301B5 /* WJDCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDCommonHeader.h; sourceTree = "<group>"; };
+		A52BF873221435DD001301B5 /* PPNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkCache.m; sourceTree = "<group>"; };
+		A52BF874221435DD001301B5 /* PPNetPathHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetPathHeader.h; sourceTree = "<group>"; };
+		A52BF875221435DD001301B5 /* PPNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkHelper.h; sourceTree = "<group>"; };
+		A52BF876221435DD001301B5 /* PPNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkHelper.m; sourceTree = "<group>"; };
+		A52BF877221435DD001301B5 /* PPNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkCache.h; sourceTree = "<group>"; };
+		A52BF87F22150BDF001301B5 /* WJDKDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDKDID.h; sourceTree = "<group>"; };
+		A52BF88022150BDF001301B5 /* WJDKDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDKDID.m; sourceTree = "<group>"; };
+		A52BF88322150C0E001301B5 /* JDDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDeviceUtils.h; sourceTree = "<group>"; };
+		A52BF88422150C0E001301B5 /* JDDeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDeviceUtils.m; sourceTree = "<group>"; };
+		A52BF88822150EB2001301B5 /* JDHubMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDHubMessageView.m; sourceTree = "<group>"; };
+		A52BF88922150EB2001301B5 /* JDHubMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDHubMessageView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A52BF70C221145A4001301B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3F482095C4203ABC9F7626 /* libPods-BaseProgect.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022A9C182B550CD2824FC109 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61CB33B54B630A5D03717880 /* Pods-BaseProgect.debug.xcconfig */,
+				560A4ED74295962B7ACD7275 /* Pods-BaseProgect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A52BF706221145A4001301B5 = {
+			isa = PBXGroup;
+			children = (
+				A52BF711221145A4001301B5 /* BaseProgect */,
+				A52BF710221145A4001301B5 /* Products */,
+				022A9C182B550CD2824FC109 /* Pods */,
+				DEB3BB1CE88528877111CA82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A52BF710221145A4001301B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF70F221145A4001301B5 /* BaseProgect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A52BF711221145A4001301B5 /* BaseProgect */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF75622129A25001301B5 /* Third */,
+				A52BF75322116990001301B5 /* Modules */,
+				A52BF75222116981001301B5 /* Managers */,
+				A52BF74322115484001301B5 /* Files */,
+				A52BF73D2211508E001301B5 /* Common */,
+				A52BF73322114E41001301B5 /* Appdelegate */,
+				A52BF73222114DF2001301B5 /* Defines */,
+				A52BF73122114DDB001301B5 /* BaseClass */,
+				A52BF72E22114C40001301B5 /* StoryBoards */,
+				A52BF721221145A6001301B5 /* Assets.xcassets */,
+				A52BF726221145A6001301B5 /* Info.plist */,
+				A52BF727221145A6001301B5 /* main.m */,
+				A52BF74F221168C8001301B5 /* PrefixHeader.pch */,
+			);
+			path = BaseProgect;
+			sourceTree = "<group>";
+		};
+		A52BF72E22114C40001301B5 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF723221145A6001301B5 /* LaunchScreen.storyboard */,
+				A52BF72F22114D45001301B5 /* WJDMain.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A52BF73122114DDB001301B5 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF73422114E92001301B5 /* WJDTabBarController.h */,
+				A52BF73522114E92001301B5 /* WJDTabBarController.m */,
+				A52BF73722114FF1001301B5 /* WJDNavigationViewController.h */,
+				A52BF73822114FF1001301B5 /* WJDNavigationViewController.m */,
+				A52BF73A22115007001301B5 /* WJDBaseViewController.h */,
+				A52BF73B22115007001301B5 /* WJDBaseViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		A52BF73222114DF2001301B5 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF73E221150B8001301B5 /* WJDColorsHeader.h */,
+				A52BF73F221150E0001301B5 /* WJDFontSizeHeader.h */,
+				A52BF74022115194001301B5 /* WJDDeviceSizeHeader.h */,
+				A52BF741221151E5001301B5 /* WJDShortcutHeader.h */,
+				A52BF74222115218001301B5 /* WJDConstStrHeader.h */,
+				A52BF755221169EF001301B5 /* WJDCommonHeader.h */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		A52BF73322114E41001301B5 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF712221145A4001301B5 /* AppDelegate.h */,
+				A52BF713221145A4001301B5 /* AppDelegate.m */,
+				A52BF74822115500001301B5 /* AppDelegate+Push.h */,
+				A52BF74922115500001301B5 /* AppDelegate+Push.m */,
+				A52BF74B22115529001301B5 /* AppDelegate+Register.h */,
+				A52BF74C22115529001301B5 /* AppDelegate+Register.m */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		A52BF73D2211508E001301B5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF88622150C13001301B5 /* Tools */,
+				A52BF872221435A3001301B5 /* NetWork */,
+				A52BF754221169D1001301B5 /* Class */,
+				A52BF75122116973001301B5 /* Views */,
+				A52BF75022116962001301B5 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A52BF74322115484001301B5 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		A52BF75022116962001301B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A52BF75122116973001301B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A52BF75222116981001301B5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A52BF75322116990001301B5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A52BF754221169D1001301B5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A52BF75622129A25001301B5 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		A52BF872221435A3001301B5 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF874221435DD001301B5 /* PPNetPathHeader.h */,
+				A52BF877221435DD001301B5 /* PPNetworkCache.h */,
+				A52BF873221435DD001301B5 /* PPNetworkCache.m */,
+				A52BF875221435DD001301B5 /* PPNetworkHelper.h */,
+				A52BF876221435DD001301B5 /* PPNetworkHelper.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		A52BF87E22150BDF001301B5 /* KDID */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF87F22150BDF001301B5 /* WJDKDID.h */,
+				A52BF88022150BDF001301B5 /* WJDKDID.m */,
+			);
+			path = KDID;
+			sourceTree = "<group>";
+		};
+		A52BF88222150C0E001301B5 /* DeviceUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF88322150C0E001301B5 /* JDDeviceUtils.h */,
+				A52BF88422150C0E001301B5 /* JDDeviceUtils.m */,
+			);
+			path = DeviceUtils;
+			sourceTree = "<group>";
+		};
+		A52BF88622150C13001301B5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF88722150EB2001301B5 /* HubMessage */,
+				A52BF88222150C0E001301B5 /* DeviceUtils */,
+				A52BF87E22150BDF001301B5 /* KDID */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A52BF88722150EB2001301B5 /* HubMessage */ = {
+			isa = PBXGroup;
+			children = (
+				A52BF88822150EB2001301B5 /* JDHubMessageView.m */,
+				A52BF88922150EB2001301B5 /* JDHubMessageView.h */,
+			);
+			path = HubMessage;
+			sourceTree = "<group>";
+		};
+		DEB3BB1CE88528877111CA82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				878B9EA1B3980A321912EDF3 /* libPods-BaseProgect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A52BF70E221145A4001301B5 /* BaseProgect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52BF72B221145A6001301B5 /* Build configuration list for PBXNativeTarget "BaseProgect" */;
+			buildPhases = (
+				04E70709ECEBB759AC64834D /* [CP] Check Pods Manifest.lock */,
+				A52BF70B221145A4001301B5 /* Sources */,
+				A52BF70C221145A4001301B5 /* Frameworks */,
+				A52BF70D221145A4001301B5 /* Resources */,
+				1DD84CBBF31AA4A73E22E6A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaseProgect;
+			productName = BaseProgect;
+			productReference = A52BF70F221145A4001301B5 /* BaseProgect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A52BF707221145A4001301B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WJD;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = WJD;
+				TargetAttributes = {
+					A52BF70E221145A4001301B5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A52BF70A221145A4001301B5 /* Build configuration list for PBXProject "BaseProgect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A52BF706221145A4001301B5;
+			productRefGroup = A52BF710221145A4001301B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A52BF70E221145A4001301B5 /* BaseProgect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A52BF70D221145A4001301B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52BF73022114D45001301B5 /* WJDMain.storyboard in Resources */,
+				A52BF725221145A6001301B5 /* LaunchScreen.storyboard in Resources */,
+				A52BF722221145A6001301B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E70709ECEBB759AC64834D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseProgect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DD84CBBF31AA4A73E22E6A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseProgect/Pods-BaseProgect-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseProgect/Pods-BaseProgect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A52BF70B221145A4001301B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52BF73922114FF1001301B5 /* WJDNavigationViewController.m in Sources */,
+				A52BF878221435DE001301B5 /* PPNetworkCache.m in Sources */,
+				A52BF728221145A6001301B5 /* main.m in Sources */,
+				A52BF714221145A4001301B5 /* AppDelegate.m in Sources */,
+				A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */,
+				A52BF879221435DE001301B5 /* PPNetworkHelper.m in Sources */,
+				A52BF74D22115529001301B5 /* AppDelegate+Register.m in Sources */,
+				A52BF73622114E92001301B5 /* WJDTabBarController.m in Sources */,
+				A52BF88522150C0E001301B5 /* JDDeviceUtils.m in Sources */,
+				A52BF74A22115500001301B5 /* AppDelegate+Push.m in Sources */,
+				A52BF88A22150EB2001301B5 /* JDHubMessageView.m in Sources */,
+				A52BF73C22115007001301B5 /* WJDBaseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A52BF723221145A6001301B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A52BF724221145A6001301B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A52BF729221145A6001301B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A52BF72A221145A6001301B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A52BF72C221145A6001301B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CB33B54B630A5D03717880 /* Pods-BaseProgect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8JJ6635Q5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProgect/PrefixHeader.pch";
+				INFOPLIST_FILE = BaseProgect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.ios.BaseProgect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A52BF72D221145A6001301B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 560A4ED74295962B7ACD7275 /* Pods-BaseProgect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8JJ6635Q5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProgect/PrefixHeader.pch";
+				INFOPLIST_FILE = BaseProgect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.ios.BaseProgect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A52BF70A221145A4001301B5 /* Build configuration list for PBXProject "BaseProgect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52BF729221145A6001301B5 /* Debug */,
+				A52BF72A221145A6001301B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52BF72B221145A6001301B5 /* Build configuration list for PBXNativeTarget "BaseProgect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52BF72C221145A6001301B5 /* Debug */,
+				A52BF72D221145A6001301B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A52BF707221145A4001301B5 /* Project object */;
+}
