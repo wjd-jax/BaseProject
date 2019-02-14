@@ -23,6 +23,9 @@
 		A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88022150BDF001301B5 /* WJDKDID.m */; };
 		A52BF88522150C0E001301B5 /* JDDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88422150C0E001301B5 /* JDDeviceUtils.m */; };
 		A52BF88A22150EB2001301B5 /* JDHubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88822150EB2001301B5 /* JDHubMessageView.m */; };
+		A5BFA8A722158CE8006B091B /* JDWebDelegeteController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFA8A422158CE8006B091B /* JDWebDelegeteController.m */; };
+		A5BFA8A822158CE8006B091B /* JDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFA8A522158CE8006B091B /* JDWebViewController.m */; };
+		A5BFA8AC22158E39006B091B /* JDUIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFA8AA22158E39006B091B /* JDUIFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,12 @@
 		A52BF88422150C0E001301B5 /* JDDeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDeviceUtils.m; sourceTree = "<group>"; };
 		A52BF88822150EB2001301B5 /* JDHubMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDHubMessageView.m; sourceTree = "<group>"; };
 		A52BF88922150EB2001301B5 /* JDHubMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDHubMessageView.h; sourceTree = "<group>"; };
+		A5BFA8A322158CE8006B091B /* JDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebViewController.h; sourceTree = "<group>"; };
+		A5BFA8A422158CE8006B091B /* JDWebDelegeteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebDelegeteController.m; sourceTree = "<group>"; };
+		A5BFA8A522158CE8006B091B /* JDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebViewController.m; sourceTree = "<group>"; };
+		A5BFA8A622158CE8006B091B /* JDWebDelegeteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebDelegeteController.h; sourceTree = "<group>"; };
+		A5BFA8AA22158E39006B091B /* JDUIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUIFactory.m; sourceTree = "<group>"; };
+		A5BFA8AB22158E39006B091B /* JDUIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUIFactory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +186,7 @@
 		A52BF73D2211508E001301B5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A5BFA8A222158CE8006B091B /* Web */,
 				A52BF88622150C13001301B5 /* Tools */,
 				A52BF872221435A3001301B5 /* NetWork */,
 				A52BF754221169D1001301B5 /* Class */,
@@ -231,6 +241,7 @@
 		A52BF75622129A25001301B5 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				A5BFA8A922158E39006B091B /* Factory */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -278,10 +289,30 @@
 		A52BF88722150EB2001301B5 /* HubMessage */ = {
 			isa = PBXGroup;
 			children = (
-				A52BF88822150EB2001301B5 /* JDHubMessageView.m */,
 				A52BF88922150EB2001301B5 /* JDHubMessageView.h */,
+				A52BF88822150EB2001301B5 /* JDHubMessageView.m */,
 			);
 			path = HubMessage;
+			sourceTree = "<group>";
+		};
+		A5BFA8A222158CE8006B091B /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFA8A322158CE8006B091B /* JDWebViewController.h */,
+				A5BFA8A422158CE8006B091B /* JDWebDelegeteController.m */,
+				A5BFA8A522158CE8006B091B /* JDWebViewController.m */,
+				A5BFA8A622158CE8006B091B /* JDWebDelegeteController.h */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		A5BFA8A922158E39006B091B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFA8AA22158E39006B091B /* JDUIFactory.m */,
+				A5BFA8AB22158E39006B091B /* JDUIFactory.h */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		DEB3BB1CE88528877111CA82 /* Frameworks */ = {
@@ -414,14 +445,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BFA8AC22158E39006B091B /* JDUIFactory.m in Sources */,
 				A52BF73922114FF1001301B5 /* WJDNavigationViewController.m in Sources */,
 				A52BF878221435DE001301B5 /* JDNetworkCache.m in Sources */,
 				A52BF728221145A6001301B5 /* main.m in Sources */,
 				A52BF714221145A4001301B5 /* AppDelegate.m in Sources */,
 				A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */,
 				A52BF879221435DE001301B5 /* JDNetworkHelper.m in Sources */,
+				A5BFA8A822158CE8006B091B /* JDWebViewController.m in Sources */,
 				A52BF74D22115529001301B5 /* AppDelegate+Register.m in Sources */,
 				A52BF73622114E92001301B5 /* WJDTabBarController.m in Sources */,
+				A5BFA8A722158CE8006B091B /* JDWebDelegeteController.m in Sources */,
 				A52BF88522150C0E001301B5 /* JDDeviceUtils.m in Sources */,
 				A52BF74A22115500001301B5 /* AppDelegate+Push.m in Sources */,
 				A52BF88A22150EB2001301B5 /* JDHubMessageView.m in Sources */,

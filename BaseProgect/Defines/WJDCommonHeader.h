@@ -9,6 +9,11 @@
 #ifndef WJDCommonHeader_h
 #define WJDCommonHeader_h
 
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+
 #import "WJDColorsHeader.h"
 #import "WJDFontSizeHeader.h"
 #import "WJDDeviceSizeHeader.h"

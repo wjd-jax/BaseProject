@@ -41,4 +41,5 @@ typedef NS_ENUM(NSInteger, DeviceType) {
 + (DeviceType)deviceType;
 
 + (NSString *)device;
+
 @end
