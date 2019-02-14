@@ -4,7 +4,7 @@
 //
 //  Created by hzad on 2019/2/11.
 //  Copyright © 2019 WJD. All rights reserved.
-//  APP字体大小宏定义
+//  AJD字体大小宏定义
 
 #ifndef WJDFontSizeHeader_h
 #define WJDFontSizeHeader_h

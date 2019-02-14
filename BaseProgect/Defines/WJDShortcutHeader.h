@@ -20,14 +20,14 @@
 //读取图片
 #define JDIMAGE_NAMED(name) [UIImage imageNamed:name]
 
-#define APPMainBundleInfo [[NSBundle mainBundle] infoDictionary]                            //
-#define APPCurrentAPPName [APPMainBundleInfo objectForKey:@"CFBundleDisplayName"]           //获取当前 APP 的名字
-#define APPCurrentAPPBundleID [[NSBundle mainBundle] bundleIdentifier]                      //获取当前 app 的 bundleID
-#define APPCurrentAPPVersion [APPMainBundleInfo objectForKey:@"CFBundleShortVersionString"] //获取当前 app 的 版本号
-#define APPCurrentAPPBuild [APPMainBundleInfo objectForKey:@"CFBundleVersion"]              //获取当前 app 的 build 号
-#define APPUserDefaults [NSUserDefaults standardUserDefaults]                               //获取UserDefaults
-#define APPNotificationCenter [NSNotificationCenter defaultCenter]                          //defaultCenter
-#define APPChannel @"appstore"                                                              //获取渠道 上架还是企业包
+#define AJDMainBundleInfo [[NSBundle mainBundle] infoDictionary]                            //
+#define AJDCurrentAJDName [AJDMainBundleInfo objectForKey:@"CFBundleDisplayName"]           //获取当前 AJD 的名字
+#define AJDCurrentAJDBundleID [[NSBundle mainBundle] bundleIdentifier]                      //获取当前 app 的 bundleID
+#define AJDCurrentAJDVersion [AJDMainBundleInfo objectForKey:@"CFBundleShortVersionString"] //获取当前 app 的 版本号
+#define AJDCurrentAJDBuild [AJDMainBundleInfo objectForKey:@"CFBundleVersion"]              //获取当前 app 的 build 号
+#define AJDUserDefaults [NSUserDefaults standardUserDefaults]                               //获取UserDefaults
+#define AJDNotificationCenter [NSNotificationCenter defaultCenter]                          //defaultCenter
+#define AJDChannel @"appstore"                                                              //获取渠道 上架还是企业包
 
 #pragma mark-----------沙盒目录文件-----------
 

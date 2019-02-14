@@ -1,27 +1,27 @@
 //
-//  PPNetworkHelper.h
-//  PPNetworkHelper
+//  JDNetworkHelper.h
+//  JDNetworkHelper
 //
-//  Created by AndyPang on 16/8/12.
-//  Copyright © 2016年 AndyPang. All rights reserved.
+//  Created by  WJD on 16/8/12.
+//  Copyright © 2016年  WJD. All rights reserved.
 //
 
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "PPNetworkCache.h"
-#import "PPNetPathHeader.h"
+#import "JDNetworkCache.h"
+#import "JDNetPathHeader.h"
 
 #ifndef kIsNetwork
-#define kIsNetwork [PPNetworkHelper isNetwork] // 一次性判断是否有网的宏
+#define kIsNetwork [JDNetworkHelper isNetwork] // 一次性判断是否有网的宏
 #endif
 
 #ifndef kIsWWANNetwork
-#define kIsWWANNetwork [PPNetworkHelper isWWANNetwork] // 一次性判断是否为手机网络的宏
+#define kIsWWANNetwork [JDNetworkHelper isWWANNetwork] // 一次性判断是否为手机网络的宏
 #endif
 
 #ifndef kIsWiFiNetwork
-#define kIsWiFiNetwork [PPNetworkHelper isWiFiNetwork] // 一次性判断是否为WiFi网络的宏
+#define kIsWiFiNetwork [JDNetworkHelper isWiFiNetwork] // 一次性判断是否为WiFi网络的宏
 #endif
 
 
@@ -30,13 +30,13 @@
 #define Request_CodeStr @"data"
 
 //请求的消息结果
-#define PPRequest_Msg responseObject[Request_MessageStr]
+#define JDRequest_Msg responseObject[Request_MessageStr]
 //请求的data值
-#define PPRequest_Data responseObject[Request_DataStr]
+#define JDRequest_Data responseObject[Request_DataStr]
 //请求的code结果
-#define PPRequest_Code [responseObject[Request_CodeStr] integerValue]
+#define JDRequest_Code [responseObject[Request_CodeStr] integerValue]
 //判断请求成功
-#define PPRequest_Success PPRequest_Code == RequstCode_Success
+#define JDRequest_Success JDRequest_Code == RequstCode_Success
 
 
 typedef NS_ENUM(NSUInteger, RequstCode) {
@@ -55,48 +55,49 @@ typedef NS_ENUM(NSUInteger, RequstCode) {
     RequstCode_SystemErr = 500, //系统错误
 };
 
-typedef NS_ENUM(NSUInteger, PPNetworkStatusType) {
+typedef NS_ENUM(NSUInteger, JDNetworkStatusType) {
     /// 未知网络
-    PPNetworkStatusUnknown,
+    JDNetworkStatusUnknown,
     /// 无网络
-    PPNetworkStatusNotReachable,
+    JDNetworkStatusNotReachable,
     /// 手机网络
-    PPNetworkStatusReachableViaWWAN,
+    JDNetworkStatusReachableViaWWAN,
     /// WIFI网络
-    PPNetworkStatusReachableViaWiFi
+    JDNetworkStatusReachableViaWiFi
 };
 
-typedef NS_ENUM(NSUInteger, PPRequestSerializer) {
+typedef NS_ENUM(NSUInteger, JDRequestSerializer) {
     /// 设置请求数据为JSON格式
-    PPRequestSerializerJSON,
+    JDRequestSerializerJSON,
     /// 设置请求数据为二进制格式
-    PPRequestSerializerHTTP,
+    JDRequestSerializerHTTP,
 };
 
-typedef NS_ENUM(NSUInteger, PPResponseSerializer) {
+typedef NS_ENUM(NSUInteger, JDResponseSerializer) {
     /// 设置响应数据为JSON格式
-    PPResponseSerializerJSON,
+    JDResponseSerializerJSON,
     /// 设置响应数据为二进制格式
-    PPResponseSerializerHTTP,
+    JDResponseSerializerHTTP,
 };
 
 /// 请求成功的Block
-typedef void (^PPHttpRequestSuccess)(id responseObject, id successData);
+typedef void (^JDHttpRequestSuccess)(id responseObject, id successData);
 
 /// 请求失败的Block
-typedef void (^PPHttpRequestFailed)(NSError *error);
+typedef void (^JDHttpRequestFailed)(NSError *error);
 
 /// 缓存的Block
-typedef void (^PPHttpRequestCache)(id responseCache);
+typedef void (^JDHttpRequestCache)(id responseCache);
 
 /// 上传或者下载的进度, Progress.completedUnitCount:当前大小 - Progress.totalUnitCount:总大小
-typedef void (^PPHttpProgress)(NSProgress *progress);
+typedef void (^JDHttpProgress)(NSProgress *progress);
 
 /// 网络状态的Block
-typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
+typedef void (^jdNetworkStatus)(JDNetworkStatusType status);
 
 @class AFHTTPSessionManager;
-@interface PPNetworkHelper : NSObject
+
+@interface JDNetworkHelper : NSObject
 
 /// 有网YES, 无网:NO
 + (BOOL)isNetwork;
@@ -111,7 +112,7 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
 + (void)cancelAllRequest;
 
 /// 实时获取网络状态,通过Block回调实时获取(此方法可多次调用)
-+ (void)networkStatusWithBlock:(PPNetworkStatus)networkStatus;
++ (void)networkStatusWithBlock:(jdNetworkStatus)networkStatus;
 
 /// 取消指定URL的HTTP请求
 + (void)cancelRequestWithURL:(NSString *)URL;
@@ -139,8 +140,8 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  */
 + (__kindof NSURLSessionTask *)GET:(NSString *)URL
                         parameters:(id)parameters
-                           success:(PPHttpRequestSuccess)success
-                           failure:(PPHttpRequestFailed)failure;
+                           success:(JDHttpRequestSuccess)success
+                           failure:(JDHttpRequestFailed)failure;
 
 /**
  *  GET请求,自动缓存
@@ -155,9 +156,9 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  */
 + (__kindof NSURLSessionTask *)GET:(NSString *)URL
                         parameters:(id)parameters
-                     responseCache:(PPHttpRequestCache)responseCache
-                           success:(PPHttpRequestSuccess)success
-                           failure:(PPHttpRequestFailed)failure;
+                     responseCache:(JDHttpRequestCache)responseCache
+                           success:(JDHttpRequestSuccess)success
+                           failure:(JDHttpRequestFailed)failure;
 
 /**
  *  POST请求,无缓存
@@ -171,8 +172,8 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  */
 + (__kindof NSURLSessionTask *)POST:(NSString *)URL
                          parameters:(id)parameters
-                            success:(PPHttpRequestSuccess)success
-                            failure:(PPHttpRequestFailed)failure;
+                            success:(JDHttpRequestSuccess)success
+                            failure:(JDHttpRequestFailed)failure;
 
 /**
  *  POST请求,自动缓存
@@ -187,9 +188,9 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  */
 + (__kindof NSURLSessionTask *)POST:(NSString *)URL
                          parameters:(id)parameters
-                      responseCache:(PPHttpRequestCache)responseCache
-                            success:(PPHttpRequestSuccess)success
-                            failure:(PPHttpRequestFailed)failure;
+                      responseCache:(JDHttpRequestCache)responseCache
+                            success:(JDHttpRequestSuccess)success
+                            failure:(JDHttpRequestFailed)failure;
 
 /**
  *  上传文件
@@ -208,15 +209,15 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
                                       parameters:(id)parameters
                                             name:(NSString *)name
                                         filePath:(NSString *)filePath
-                                        progress:(PPHttpProgress)progress
-                                         success:(PPHttpRequestSuccess)success
-                                         failure:(PPHttpRequestFailed)failure;
+                                        progress:(JDHttpProgress)progress
+                                         success:(JDHttpRequestSuccess)success
+                                         failure:(JDHttpRequestFailed)failure;
 
 /**
  *  上传单张图片到阿里云
  *
  *  @param URL        请求地址
- *  @param image      图片数组
+ *  @param image      图片
  *  @param progress   上传进度信息
  *  @param success    请求成功的回调
  *  @param failure    请求失败的回调
@@ -225,10 +226,10 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  */
 
 + (__kindof NSURLSessionTask *)uploadImagesToOSSWithURL:(NSString *)URL
-                                                  image:(UIImage *)images
-                                               progress:(PPHttpProgress)progress
-                                                success:(PPHttpRequestSuccess)success
-                                                failure:(PPHttpRequestFailed)failure;
+                                                  image:(UIImage *)image
+                                               progress:(JDHttpProgress)progress
+                                                success:(JDHttpRequestSuccess)success
+                                                failure:(JDHttpRequestFailed)failure;
 
 /**
  *  上传单/多张图片
@@ -254,9 +255,9 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
                                          fileNames:(NSArray< NSString * > *)fileNames
                                         imageScale:(CGFloat)imageScale
                                          imageType:(NSString *)imageType
-                                          progress:(PPHttpProgress)progress
-                                           success:(PPHttpRequestSuccess)success
-                                           failure:(PPHttpRequestFailed)failure;
+                                          progress:(JDHttpProgress)progress
+                                           success:(JDHttpRequestSuccess)success
+                                           failure:(JDHttpRequestFailed)failure;
 
 /**
  *  下载文件
@@ -271,17 +272,17 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  */
 + (__kindof NSURLSessionTask *)downloadWithURL:(NSString *)URL
                                        fileDir:(NSString *)fileDir
-                                      progress:(PPHttpProgress)progress
+                                      progress:(JDHttpProgress)progress
                                        success:(void (^)(NSString *filePath))success
-                                       failure:(PPHttpRequestFailed)failure;
+                                       failure:(JDHttpRequestFailed)failure;
 
 /*
  **************************************  说明  **********************************************
  *
  * 在一开始设计接口的时候就想着方法接口越少越好,越简单越好,只有GET,POST,上传,下载,监测网络状态就够了.
  *
- * 无奈的是在实际开发中,每个APP与后台服务器的数据交互都有不同的请求格式,如果要修改请求格式,就要在此封装
- * 内修改,再加上此封装在支持CocoaPods后,如果使用者pod update最新PPNetworkHelper,那又要重新修改此
+ * 无奈的是在实际开发中,每个AJD与后台服务器的数据交互都有不同的请求格式,如果要修改请求格式,就要在此封装
+ * 内修改,再加上此封装在支持CocoaPods后,如果使用者pod update最新JDNetworkHelper,那又要重新修改此
  * 封装内的相关参数.
  *
  * 依个人经验,在项目的开发中,一般都会将网络请求部分封装 2~3 层,第2层配置好网络请求工具的在本项目中的各项
@@ -289,7 +290,7 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  * 的方法接口只留出请求参数的入口.这样如果以后项目要更换网络请求库或者修改请求URL,在单个文件内完成配置就好
  * 了,大大降低了项目的后期维护难度
  *
- * 综上所述,最终还是将设置参数的接口暴露出来,如果通过CocoaPods方式使用PPNetworkHelper,在设置项目网络
+ * 综上所述,最终还是将设置参数的接口暴露出来,如果通过CocoaPods方式使用JDNetworkHelper,在设置项目网络
  * 请求参数的时候,强烈建议开发者在此基础上再封装一层,通过以下方法配置好各种参数与请求的URL,便于维护
  *
  **************************************  说明  **********************************************
@@ -307,16 +308,16 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
 /**
  *  设置网络请求参数的格式:默认为二进制格式
  *
- *  @param requestSerializer PPRequestSerializerJSON(JSON格式),PPRequestSerializerHTTP(二进制格式),
+ *  @param requestSerializer JDRequestSerializerJSON(JSON格式),JDRequestSerializerHTTP(二进制格式),
  */
-+ (void)setRequestSerializer:(PPRequestSerializer)requestSerializer;
++ (void)setRequestSerializer:(JDRequestSerializer)requestSerializer;
 
 /**
  *  设置服务器响应数据格式:默认为JSON格式
  *
- *  @param responseSerializer PPResponseSerializerJSON(JSON格式),PPResponseSerializerHTTP(二进制格式)
+ *  @param responseSerializer JDResponseSerializerJSON(JSON格式),JDResponseSerializerHTTP(二进制格式)
  */
-+ (void)setResponseSerializer:(PPResponseSerializer)responseSerializer;
++ (void)setResponseSerializer:(JDResponseSerializer)responseSerializer;
 
 /**
  *  设置请求超时时间:默认为30S
@@ -353,8 +354,8 @@ typedef void (^PPNetworkStatus)(PPNetworkStatusType status);
  */
 + (NSURLSessionTask *)uploadData:(NSDictionary *)dict
                              URL:(NSString *)urlStr
-                         success:(PPHttpRequestSuccess)success
-                         failure:(PPHttpRequestFailed)failure;
+                         success:(JDHttpRequestSuccess)success
+                         failure:(JDHttpRequestFailed)failure;
 
 @end
 

@@ -1,22 +1,22 @@
 //
-//  PPNetPathHeader.h
+//  JDNetPathHeader.h
 //  DKCSProject
 //
 //  Created by hzad on 2018/12/24.
 //  Copyright © 2018 hzad. All rights reserved.
 //
 
-#ifndef PPNetPathHeader_h
-#define PPNetPathHeader_h
+#ifndef JDNetPathHeader_h
+#define JDNetPathHeader_h
 
-#define url0 @"http://118.31.14.130:1828" //调试环境
-#define url1 @"http://172.16.0.176:8080"  //调试环境 林海文
-#define url2 @"http://172.16.0.74:8080"   //调试环境 张瑞
-#define url3 @"http://47.110.187.78:1828" //调试环境 快速
+#define url0 @"http://wwww.baidu.com" //调试环境1
+#define url1 @"http://wwww.baidu.com" //调试环境2
+#define url2 @"http://wwww.baidu.com" //调试环境3
+
 
 #ifdef DEBUG
 
-#define BaseURLString url3
+#define BaseURLString url2
 
 #else
 
@@ -24,4 +24,4 @@
                                                                                                                                                                                                                                                                                                                                                       
 #endif
 
-#endif /* PPNetPathHeader_h */
+#endif /* JDNetPathHeader_h */

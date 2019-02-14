@@ -1,21 +1,21 @@
 //
-//  PPNetworkCache.m
-//  PPNetworkHelper
+//  JDNetworkCache.m
+//  JDNetworkHelper
 //
-//  Created by AndyPang on 16/8/12.
-//  Copyright © 2016年 AndyPang. All rights reserved.
+//  Created by  WJD on 16/8/12.
+//  Copyright © 2016年  WJD. All rights reserved.
 //
 
-#import "PPNetworkCache.h"
+#import "JDNetworkCache.h"
 #import "YYCache.h"
 
-static NSString *const kPPNetworkResponseCache = @"kPPNetworkResponseCache";
+static NSString *const kJDNetworkResponseCache = @"kJDNetworkResponseCache";
 
-@implementation PPNetworkCache
+@implementation JDNetworkCache
 static YYCache *_dataCache;
 
 + (void)initialize {
-    _dataCache = [YYCache cacheWithName:kPPNetworkResponseCache];
+    _dataCache = [YYCache cacheWithName:kJDNetworkResponseCache];
 }
 
 + (void)setHttpCache:(id)httpData URL:(NSString *)URL parameters:(NSDictionary *)parameters {

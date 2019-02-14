@@ -18,8 +18,8 @@
 		A52BF73C22115007001301B5 /* WJDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF73B22115007001301B5 /* WJDBaseViewController.m */; };
 		A52BF74A22115500001301B5 /* AppDelegate+Push.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF74922115500001301B5 /* AppDelegate+Push.m */; };
 		A52BF74D22115529001301B5 /* AppDelegate+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF74C22115529001301B5 /* AppDelegate+Register.m */; };
-		A52BF878221435DE001301B5 /* PPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF873221435DD001301B5 /* PPNetworkCache.m */; };
-		A52BF879221435DE001301B5 /* PPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF876221435DD001301B5 /* PPNetworkHelper.m */; };
+		A52BF878221435DE001301B5 /* JDNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF873221435DD001301B5 /* JDNetworkCache.m */; };
+		A52BF879221435DE001301B5 /* JDNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF876221435DD001301B5 /* JDNetworkHelper.m */; };
 		A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88022150BDF001301B5 /* WJDKDID.m */; };
 		A52BF88522150C0E001301B5 /* JDDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88422150C0E001301B5 /* JDDeviceUtils.m */; };
 		A52BF88A22150EB2001301B5 /* JDHubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88822150EB2001301B5 /* JDHubMessageView.m */; };
@@ -54,11 +54,11 @@
 		A52BF74C22115529001301B5 /* AppDelegate+Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Register.m"; sourceTree = "<group>"; };
 		A52BF74F221168C8001301B5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A52BF755221169EF001301B5 /* WJDCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDCommonHeader.h; sourceTree = "<group>"; };
-		A52BF873221435DD001301B5 /* PPNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkCache.m; sourceTree = "<group>"; };
-		A52BF874221435DD001301B5 /* PPNetPathHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetPathHeader.h; sourceTree = "<group>"; };
-		A52BF875221435DD001301B5 /* PPNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkHelper.h; sourceTree = "<group>"; };
-		A52BF876221435DD001301B5 /* PPNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkHelper.m; sourceTree = "<group>"; };
-		A52BF877221435DD001301B5 /* PPNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkCache.h; sourceTree = "<group>"; };
+		A52BF873221435DD001301B5 /* JDNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetworkCache.m; sourceTree = "<group>"; };
+		A52BF874221435DD001301B5 /* JDNetPathHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetPathHeader.h; sourceTree = "<group>"; };
+		A52BF875221435DD001301B5 /* JDNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetworkHelper.h; sourceTree = "<group>"; };
+		A52BF876221435DD001301B5 /* JDNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetworkHelper.m; sourceTree = "<group>"; };
+		A52BF877221435DD001301B5 /* JDNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetworkCache.h; sourceTree = "<group>"; };
 		A52BF87F22150BDF001301B5 /* WJDKDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDKDID.h; sourceTree = "<group>"; };
 		A52BF88022150BDF001301B5 /* WJDKDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDKDID.m; sourceTree = "<group>"; };
 		A52BF88322150C0E001301B5 /* JDDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDeviceUtils.h; sourceTree = "<group>"; };
@@ -238,11 +238,11 @@
 		A52BF872221435A3001301B5 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				A52BF874221435DD001301B5 /* PPNetPathHeader.h */,
-				A52BF877221435DD001301B5 /* PPNetworkCache.h */,
-				A52BF873221435DD001301B5 /* PPNetworkCache.m */,
-				A52BF875221435DD001301B5 /* PPNetworkHelper.h */,
-				A52BF876221435DD001301B5 /* PPNetworkHelper.m */,
+				A52BF874221435DD001301B5 /* JDNetPathHeader.h */,
+				A52BF877221435DD001301B5 /* JDNetworkCache.h */,
+				A52BF873221435DD001301B5 /* JDNetworkCache.m */,
+				A52BF875221435DD001301B5 /* JDNetworkHelper.h */,
+				A52BF876221435DD001301B5 /* JDNetworkHelper.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -415,11 +415,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52BF73922114FF1001301B5 /* WJDNavigationViewController.m in Sources */,
-				A52BF878221435DE001301B5 /* PPNetworkCache.m in Sources */,
+				A52BF878221435DE001301B5 /* JDNetworkCache.m in Sources */,
 				A52BF728221145A6001301B5 /* main.m in Sources */,
 				A52BF714221145A4001301B5 /* AppDelegate.m in Sources */,
 				A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */,
-				A52BF879221435DE001301B5 /* PPNetworkHelper.m in Sources */,
+				A52BF879221435DE001301B5 /* JDNetworkHelper.m in Sources */,
 				A52BF74D22115529001301B5 /* AppDelegate+Register.m in Sources */,
 				A52BF73622114E92001301B5 /* WJDTabBarController.m in Sources */,
 				A52BF88522150C0E001301B5 /* JDDeviceUtils.m in Sources */,
@@ -560,6 +560,7 @@
 			baseConfigurationReference = 61CB33B54B630A5D03717880 /* Pods-BaseProgect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8JJ6635Q5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProgect/PrefixHeader.pch";
@@ -580,6 +581,7 @@
 			baseConfigurationReference = 560A4ED74295962B7ACD7275 /* Pods-BaseProgect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8JJ6635Q5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProgect/PrefixHeader.pch";
