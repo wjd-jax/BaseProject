@@ -107,15 +107,16 @@
     [request addValue:[UIApplication sharedApplication].appVersion forHTTPHeaderField:@"app-ver"]; //app版本
 }
 
-#pragma mark - Setting
-//- (void)setUrlString:(NSString *)urlString {
-//
-//    //中文字符处理
-//    NSCharacterSet *encode_set = [NSCharacterSet URLQueryAllowedCharacterSet];
-//    NSString *urlString_encode = [urlString stringByAddingPercentEncodingWithAllowedCharacters:encode_set];
-//    _urlString = urlString_encode;
-//}
+#pragma mark - 中文处理
+- (void)setUrlString:(NSString *)urlString {
 
+    //中文字符处理
+    NSCharacterSet *encode_set = [NSCharacterSet URLQueryAllowedCharacterSet];
+    NSString *urlString_encode = [urlString stringByAddingPercentEncodingWithAllowedCharacters:encode_set];
+    _urlString = urlString_encode;
+}
+
+#pragma mark - Setting
 - (void)setNavTitle:(NSString *)navTitle {
     _navTitle = navTitle;
 }
@@ -296,12 +297,15 @@
         [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)dealloc {
-    [self.wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
-    [self.wkWebView removeObserver:self forKeyPath:@"title"];
-    [JDNotificationCenter removeObserver:self];
+-(void)exitClick {
+    
+    if (self.navigationController) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else
+        [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - getting
 - (UIButton *)exitButton {
     if (!_exitButton) {
 
@@ -312,13 +316,11 @@
     return _exitButton;
 }
 
--(void)exitClick {
 
-        if (self.navigationController) {
-            [self.navigationController popViewControllerAnimated:YES];
-        } else
-            [self dismissViewControllerAnimated:YES completion:nil];
-    }
-
+- (void)dealloc {
+    [self.wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
+    [self.wkWebView removeObserver:self forKeyPath:@"title"];
+    [JDNotificationCenter removeObserver:self];
+}
 
 @end

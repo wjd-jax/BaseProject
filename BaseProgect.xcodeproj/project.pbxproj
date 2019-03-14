@@ -23,6 +23,7 @@
 		A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88022150BDF001301B5 /* WJDKDID.m */; };
 		A52BF88522150C0E001301B5 /* JDDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88422150C0E001301B5 /* JDDeviceUtils.m */; };
 		A52BF88A22150EB2001301B5 /* JDHubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A52BF88822150EB2001301B5 /* JDHubMessageView.m */; };
+		A58F8017223A3C90001224A2 /* UIView+JDView.m in Sources */ = {isa = PBXBuildFile; fileRef = A58F8015223A3C90001224A2 /* UIView+JDView.m */; };
 		A5BFA8A722158CE8006B091B /* JDWebDelegeteController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFA8A422158CE8006B091B /* JDWebDelegeteController.m */; };
 		A5BFA8A822158CE8006B091B /* JDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFA8A522158CE8006B091B /* JDWebViewController.m */; };
 		A5BFA8AC22158E39006B091B /* JDUIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFA8AA22158E39006B091B /* JDUIFactory.m */; };
@@ -68,6 +69,8 @@
 		A52BF88422150C0E001301B5 /* JDDeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDeviceUtils.m; sourceTree = "<group>"; };
 		A52BF88822150EB2001301B5 /* JDHubMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDHubMessageView.m; sourceTree = "<group>"; };
 		A52BF88922150EB2001301B5 /* JDHubMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDHubMessageView.h; sourceTree = "<group>"; };
+		A58F8015223A3C90001224A2 /* UIView+JDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDView.m"; sourceTree = "<group>"; };
+		A58F8016223A3C90001224A2 /* UIView+JDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDView.h"; sourceTree = "<group>"; };
 		A5BFA8A322158CE8006B091B /* JDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebViewController.h; sourceTree = "<group>"; };
 		A5BFA8A422158CE8006B091B /* JDWebDelegeteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebDelegeteController.m; sourceTree = "<group>"; };
 		A5BFA8A522158CE8006B091B /* JDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebViewController.m; sourceTree = "<group>"; };
@@ -279,6 +282,7 @@
 		A52BF88622150C13001301B5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A58F8014223A3C90001224A2 /* ViewExtern */,
 				A52BF88722150EB2001301B5 /* HubMessage */,
 				A52BF88222150C0E001301B5 /* DeviceUtils */,
 				A52BF87E22150BDF001301B5 /* KDID */,
@@ -293,6 +297,15 @@
 				A52BF88822150EB2001301B5 /* JDHubMessageView.m */,
 			);
 			path = HubMessage;
+			sourceTree = "<group>";
+		};
+		A58F8014223A3C90001224A2 /* ViewExtern */ = {
+			isa = PBXGroup;
+			children = (
+				A58F8016223A3C90001224A2 /* UIView+JDView.h */,
+				A58F8015223A3C90001224A2 /* UIView+JDView.m */,
+			);
+			path = ViewExtern;
 			sourceTree = "<group>";
 		};
 		A5BFA8A222158CE8006B091B /* Web */ = {
@@ -452,6 +465,7 @@
 				A52BF714221145A4001301B5 /* AppDelegate.m in Sources */,
 				A52BF88122150BDF001301B5 /* WJDKDID.m in Sources */,
 				A52BF879221435DE001301B5 /* JDNetworkHelper.m in Sources */,
+				A58F8017223A3C90001224A2 /* UIView+JDView.m in Sources */,
 				A5BFA8A822158CE8006B091B /* JDWebViewController.m in Sources */,
 				A52BF74D22115529001301B5 /* AppDelegate+Register.m in Sources */,
 				A52BF73622114E92001301B5 /* WJDTabBarController.m in Sources */,

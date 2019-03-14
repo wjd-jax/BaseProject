@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WJDBaseViewController : UIViewController
 
+//加载数据,子类数据都从这里加载,便于登录退出的时候进行数据更新
+- (void)loadData;
+
 @end
 
 NS_ASSUME_NONNULL_END

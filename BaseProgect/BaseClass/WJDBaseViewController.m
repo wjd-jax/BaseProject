@@ -20,6 +20,11 @@
     // Do any additional setup after loading the view.
 }
 
+
+- (void)loadData{
+    
+    DLog(@"%@子类没有重写加载数据方法",[self className]);
+}
 /*
 #pragma mark - Navigation
 
